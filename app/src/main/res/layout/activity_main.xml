@@ -157,17 +157,19 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/btn7"
         android:layout_alignLeft="@+id/tvResults"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignStart="@+id/tvResults"
-        android:layout_marginBottom="28dp"
-        android:text="Control" />
+        android:layout_marginBottom="28dp" />
 
     <TextView
         android:id="@+id/tvResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/tvControl"
-        android:layout_marginBottom="17dp"
-        android:layout_toEndOf="@+id/btn7"
-        android:layout_toRightOf="@+id/btn7"
-        android:text="Results" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp" />
 </RelativeLayout>
