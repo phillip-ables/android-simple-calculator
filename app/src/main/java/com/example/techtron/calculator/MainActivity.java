@@ -12,6 +12,12 @@ public class MainActivity extends AppCompatActivity {
     private Button add, sub, div, mul;
     private Button equal, clear;
     private TextView info, result;
+    private final char ADDITION = '+';
+    private final char SUBTRACTION = '-';
+    private final char MULTIPLICATION = '*';
+    private final char DIVISION = '/';
+    private double val1 = Double.NaN;
+    private double val2;
     //associate each variables with thier ids in the xml file
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         eight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                info.setText(info.getText().toString() + "8")
+                info.setText(info.getText().toString() + "8");
             }
         });
         nine.setOnClickListener(new View.OnClickListener() {
